@@ -38,9 +38,15 @@ def self.artists
 end
 
 def self.genres
-  @@genres
+    @genres_unique = []
   
+  @@genres.each do |genre|
+    if !@genres_unique.include?(genre)
+      @genres_unique << genre
+    end
+  end
   
+  @genres_unique 
 end
 
 def self.genre_count
