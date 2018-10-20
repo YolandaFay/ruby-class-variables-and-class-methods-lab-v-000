@@ -28,7 +28,7 @@ def self.artists
   @artists_unique = []
   
   @@artists.each do |artist|
-    if !@artists_unique.contain?(artist)
+    if !@artists_unique.include?(artist)
       @artists_unique << artist
     end
   end
