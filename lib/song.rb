@@ -45,7 +45,7 @@ end
 def self.genre_count
   
   @genre_hash = {}
-  #binding.pry # // @@genres_total = 34
+  binding.pry # // @@genres_total = 34
     
   @@genres_total.each do |genre|
     if @genre_hash.key?(genre)
