@@ -19,15 +19,15 @@ def initialize (name, artist, genre)
   
   @@artists_total << artist
    
-  if !@@artists.include?(artist) #|| uniqueness condition 
-  @@artists << artist
-  end
+  #if !@@artists.include?(artist) #|| uniqueness condition 
+  #@@artists << artist
+  #end
   
   @@genres_total << genre 
   
-  if !@@genres.include?(genre) #|| uniqueness condition 
-  @@genres << genre 
-  end 
+  #if !@@genres.include?(genre) #|| uniqueness condition 
+  #@@genres << genre 
+  #end 
 end
 
 def self.count 
