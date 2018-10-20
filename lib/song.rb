@@ -50,7 +50,7 @@ def self.genre_count
   @genre_hash = {}
   binding.pry # // @@genres_total = 34
     
-  @@genres_total.each do |genre|
+  @@genres.each do |genre|
     if @genre_hash.key?(genre)
       @genre_hash[genre] += 1  
     else
@@ -66,7 +66,7 @@ def self.artist_count
   
   @artist_hash = {}
   
-  @@artists_total.each do |artist|
+  @@artists.each do |artist|
     if @artist_hash.key?(artist)
       @artist_hash[artist] += 1 
     else
