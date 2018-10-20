@@ -16,9 +16,9 @@ def initialize (name, artist, genre)
   @genre = genre
   
   @@count += 1 
-  binding.pry 
+  
   @@artists_total << artist
-  binding.pry 
+   
   if !@@artists.include?(artist) #|| uniqueness condition 
   @@artists << artist
   end
