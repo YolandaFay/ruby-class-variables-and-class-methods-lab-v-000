@@ -25,8 +25,14 @@ def self.count
 end
 
 def self.artists
-  @@artists
+  @artists_unique = []
   
+  @@artists.each do |artist|
+  if @artists_unique.contain(artist)
+    @artists_unique << artist
+  end
+  
+  @artists_unique 
   
 end
 
