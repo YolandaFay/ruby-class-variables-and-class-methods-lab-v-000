@@ -48,7 +48,7 @@ describe "Song" do
     end
 
     it "has a class variable, @@genres, that contains all of the genres of existing songs" do 
-      expect(Song.class_variable_get(:@@genres)).to match(["rap", "pop"])
+      expect(Song.class_variable_get(:@@genres)).to match(["rap", "rap," "pop"])
     end
   end
 
